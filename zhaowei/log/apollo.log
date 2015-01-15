@@ -1,0 +1,347 @@
+2015-01-14 15:43:42,231 | INFO  | OS     : Linux 3.2.0-74-generic (Ubuntu 12.04.5 LTS) | 
+2015-01-14 15:43:42,233 | INFO  | JVM    : OpenJDK 64-Bit Server VM 1.6.0_33 (Sun Microsystems Inc.) | 
+2015-01-14 15:43:42,233 | INFO  | Apollo : 1.7 (at: /home/zhaowei/work/apollo/apache-apollo-1.7) | 
+2015-01-14 15:43:42,234 | INFO  | OS is restricting the open file limit to: 3125 | 
+2015-01-14 15:43:42,235 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2015-01-14 15:43:42,443 | INFO  | Starting store: leveldb store at /home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/data | 
+2015-01-14 15:43:42,664 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2015-01-14 15:43:42,668 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2015-01-14 15:43:42,792 | INFO  | Opening the log file took: 174.80 ms | 
+2015-01-14 15:43:42,825 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-01-14 15:43:42,877 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2015-01-14 15:43:44,191 | WARN  | FAILED SslSelectChannelConnector@127.0.0.1:61681: java.net.BindException: Address already in use | 
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:174)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:139)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:77)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260)
+	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:283)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.apache.activemq.apollo.broker.jetty.JettyWebServer$$anonfun$_start$1.apply$mcV$sp(JettyWebServer.scala:270)
+	at org.fusesource.hawtdispatch.package$$anon$4.run(hawtdispatch.scala:357)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:701)
+2015-01-14 15:43:44,194 | WARN  | FAILED org.eclipse.jetty.server.Server@2043cac8: java.net.BindException: Address already in use | 
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:174)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:139)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:77)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260)
+	at org.eclipse.jetty.server.ssl.SslSelectChannelConnector.doStart(SslSelectChannelConnector.java:626)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:283)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.apache.activemq.apollo.broker.jetty.JettyWebServer$$anonfun$_start$1.apply$mcV$sp(JettyWebServer.scala:270)
+	at org.fusesource.hawtdispatch.package$$anon$4.run(hawtdispatch.scala:357)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:701)
+2015-01-14 15:43:44,198 | WARN  | java.lang.Error: java.net.BindException: Address already in use | 14ae765e22d
+2015-01-14 15:43:47,465 | INFO  | broker startup is waiting on start jetty webserver | 
+2015-01-14 15:44:17,770 | INFO  | stopping broker is waiting on stop broker: default | 
+2015-01-14 15:47:04,525 | INFO  | OS     : Linux 3.2.0-74-generic (Ubuntu 12.04.5 LTS) | 
+2015-01-14 15:47:04,542 | INFO  | JVM    : OpenJDK 64-Bit Server VM 1.6.0_33 (Sun Microsystems Inc.) | 
+2015-01-14 15:47:04,543 | INFO  | Apollo : 1.7 (at: /home/zhaowei/work/apollo/apache-apollo-1.7) | 
+2015-01-14 15:47:04,544 | INFO  | OS is restricting the open file limit to: 3125 | 
+2015-01-14 15:47:04,545 | WARN  | Please increase the process file limit using 'ulimit -n 4500' or configure lower connection limits on the broker connectors. | 
+2015-01-14 15:47:04,968 | INFO  | Starting store: leveldb store at /home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/data | 
+2015-01-14 15:47:05,655 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2015-01-14 15:47:05,875 | INFO  | Opening the log file took: 173.39 ms | 
+2015-01-14 15:47:05,906 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-01-14 15:47:06,060 | INFO  | virtual host startup is waiting on store startup | 
+2015-01-14 15:47:07,121 | INFO  | virtual host startup is no longer waiting.  It waited a total of 2 seconds. | 
+2015-01-14 15:47:08,180 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 15:50:26,588 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 15:50:27,053 | INFO  | Administration interface available at: http://172.22.197.200:61685/ | 
+2015-01-14 15:50:27,054 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 15:54:30,819 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 15:54:30,857 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2015-01-14 15:54:30,858 | INFO  | Accepting connections at: tcp://172.22.197.200:61613 | 
+2015-01-14 15:56:06,216 | INFO  | java.io.EOFException: Peer disconnected | 14ae768f70c
+2015-01-14 16:09:07,524 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:09:07,566 | INFO  | Stopped connector at: tcp://172.22.197.200:61613 | 
+2015-01-14 16:09:07,572 | ERROR | Start failed due to java.io.IOException: Failed to bind to server socket: /0.0.0.0:61883 due to: java.net.BindException: Address already in use | 14ae768f70d
+2015-01-14 16:09:40,549 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:10:48,603 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:20:46,635 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/session/whoami' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f70e
+2015-01-14 16:20:46,639 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/virtual-hosts/zhaowei' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f70f
+2015-01-14 16:20:46,643 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/session/whoami' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f710
+2015-01-14 16:20:47,000 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f711
+2015-01-14 16:20:49,000 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f712
+2015-01-14 16:20:51,000 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f713
+2015-01-14 16:20:52,171 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/session/whoami' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f714
+2015-01-14 16:20:52,999 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f715
+2015-01-14 16:20:55,000 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f716
+2015-01-14 16:20:56,999 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f717
+2015-01-14 16:20:59,000 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f718
+2015-01-14 16:21:01,000 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f719
+2015-01-14 16:21:03,000 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f71a
+2015-01-14 16:21:05,002 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f71b
+2015-01-14 16:21:07,007 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f71c
+2015-01-14 16:21:09,011 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f71d
+2015-01-14 16:21:11,012 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f71e
+2015-01-14 16:21:13,020 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f71f
+2015-01-14 16:21:15,018 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f720
+2015-01-14 16:21:17,021 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f721
+2015-01-14 16:21:19,020 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f722
+2015-01-14 16:21:21,024 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f723
+2015-01-14 16:21:23,028 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f724
+2015-01-14 16:21:25,031 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f725
+2015-01-14 16:21:27,033 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f726
+2015-01-14 16:21:29,035 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f727
+2015-01-14 16:21:31,037 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f728
+2015-01-14 16:21:33,040 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f729
+2015-01-14 16:21:35,040 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f72a
+2015-01-14 16:21:37,044 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f72b
+2015-01-14 16:21:39,048 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f72c
+2015-01-14 16:21:41,050 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f72d
+2015-01-14 16:21:43,052 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f72e
+2015-01-14 16:21:45,054 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f72f
+2015-01-14 16:21:47,057 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f730
+2015-01-14 16:21:49,058 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f731
+2015-01-14 16:21:51,060 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f732
+2015-01-14 16:21:53,064 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f733
+2015-01-14 16:21:55,067 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f734
+2015-01-14 16:21:57,070 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f735
+2015-01-14 16:21:59,075 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f736
+2015-01-14 16:22:01,076 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f737
+2015-01-14 16:22:03,078 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f738
+2015-01-14 16:22:05,082 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f739
+2015-01-14 16:22:07,085 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f73a
+2015-01-14 16:22:09,087 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f73b
+2015-01-14 16:22:11,088 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f73c
+2015-01-14 16:22:13,092 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f73d
+2015-01-14 16:22:15,095 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f73e
+2015-01-14 16:22:16,101 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:22:17,098 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f73f
+2015-01-14 16:22:19,100 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f740
+2015-01-14 16:22:21,102 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f741
+2015-01-14 16:22:23,106 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f742
+2015-01-14 16:22:25,108 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f743
+2015-01-14 16:22:27,112 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f744
+2015-01-14 16:22:29,112 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f745
+2015-01-14 16:22:31,116 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f746
+2015-01-14 16:22:33,120 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f747
+2015-01-14 16:22:35,124 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f748
+2015-01-14 16:22:37,125 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f749
+2015-01-14 16:22:39,126 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f74a
+2015-01-14 16:22:41,129 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f74b
+2015-01-14 16:22:43,132 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f74c
+2015-01-14 16:22:45,136 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f74d
+2015-01-14 16:22:47,136 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f74e
+2015-01-14 16:22:49,140 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f74f
+2015-01-14 16:22:51,143 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f750
+2015-01-14 16:22:53,146 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f751
+2015-01-14 16:22:55,148 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f752
+2015-01-14 16:22:57,150 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f753
+2015-01-14 16:22:59,152 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f754
+2015-01-14 16:23:01,152 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f755
+2015-01-14 16:23:03,156 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f756
+2015-01-14 16:23:05,159 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f757
+2015-01-14 16:23:07,161 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f758
+2015-01-14 16:23:09,163 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f759
+2015-01-14 16:23:11,165 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f75a
+2015-01-14 16:23:13,168 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f75b
+2015-01-14 16:23:15,168 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f75c
+2015-01-14 16:23:17,172 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f75d
+2015-01-14 16:23:19,176 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f75e
+2015-01-14 16:23:21,177 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f75f
+2015-01-14 16:23:23,180 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f760
+2015-01-14 16:23:25,180 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f761
+2015-01-14 16:23:27,185 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f762
+2015-01-14 16:23:29,186 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f763
+2015-01-14 16:23:31,188 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f764
+2015-01-14 16:23:33,191 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f765
+2015-01-14 16:23:35,193 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f766
+2015-01-14 16:23:37,194 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f767
+2015-01-14 16:23:39,199 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f768
+2015-01-14 16:23:41,202 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f769
+2015-01-14 16:23:43,204 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f76a
+2015-01-14 16:23:45,204 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f76b
+2015-01-14 16:23:47,208 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f76c
+2015-01-14 16:23:49,211 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f76d
+2015-01-14 16:23:51,213 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f76e
+2015-01-14 16:23:53,216 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f76f
+2015-01-14 16:23:55,218 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f770
+2015-01-14 16:23:57,220 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f771
+2015-01-14 16:23:59,221 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f772
+2015-01-14 16:24:01,224 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f773
+2015-01-14 16:24:03,228 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f774
+2015-01-14 16:24:05,231 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f775
+2015-01-14 16:24:07,233 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f776
+2015-01-14 16:24:09,235 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f777
+2015-01-14 16:24:11,237 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f778
+2015-01-14 16:24:13,239 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f779
+2015-01-14 16:24:15,240 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f77a
+2015-01-14 16:24:17,243 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f77b
+2015-01-14 16:24:19,246 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f77c
+2015-01-14 16:24:21,249 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f77d
+2015-01-14 16:24:23,251 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f77e
+2015-01-14 16:24:25,254 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f77f
+2015-01-14 16:24:27,256 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f780
+2015-01-14 16:24:29,256 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f781
+2015-01-14 16:24:31,260 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f782
+2015-01-14 16:24:33,262 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f783
+2015-01-14 16:24:35,262 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f784
+2015-01-14 16:24:37,268 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f785
+2015-01-14 16:24:39,270 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f786
+2015-01-14 16:24:41,272 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f787
+2015-01-14 16:24:43,275 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f788
+2015-01-14 16:24:45,275 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f789
+2015-01-14 16:24:47,281 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f78a
+2015-01-14 16:24:49,284 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f78b
+2015-01-14 16:24:51,287 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f78c
+2015-01-14 16:24:53,291 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f78d
+2015-01-14 16:24:55,293 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f78e
+2015-01-14 16:24:57,296 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/broker/config/files' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f78f
+2015-01-14 16:24:57,959 | WARN  | HTTP request from '172.22.197.2' for GET '/api/json/session/whoami' caused internal server error: java.lang.ClassCastException: org.eclipse.jetty.server.session.HashedSession cannot be cast to org.apache.activemq.apollo.web.resources.UserInfo | 14ae768f790
+2015-01-14 16:30:34,097 | INFO  | java.io.EOFException: Peer disconnected | 14ae768f792
+2015-01-14 16:31:26,854 | ERROR | Start should not be called from state: FAILED | 
+2015-01-14 16:31:30,911 | ERROR | Start should not be called from state: FAILED | 
+2015-01-14 16:31:36,156 | ERROR | Start should not be called from state: FAILED | 
+2015-01-14 16:31:38,357 | ERROR | Start should not be called from state: FAILED | 
+2015-01-14 16:31:39,958 | ERROR | Start should not be called from state: FAILED | 
+2015-01-14 16:32:17,528 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:32:22,956 | ERROR | Start should not be called from state: FAILED | 
+2015-01-14 16:32:23,799 | ERROR | Start should not be called from state: FAILED | 
+2015-01-14 16:32:49,025 | ERROR | Start should not be called from state: FAILED | 
+2015-01-14 16:33:11,904 | ERROR | Start should not be called from state: FAILED | 
+2015-01-14 16:33:54,593 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:34:51,364 | ERROR | Start should not be called from state: FAILED | 
+2015-01-14 16:36:11,488 | ERROR | Stop should not be called from state: FAILED | 
+2015-01-14 16:36:11,502 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-01-14 16:36:19,835 | INFO  | OS     : Linux 3.2.0-74-generic (Ubuntu 12.04.5 LTS) | 
+2015-01-14 16:36:19,841 | INFO  | JVM    : OpenJDK 64-Bit Server VM 1.6.0_33 (Sun Microsystems Inc.) | 
+2015-01-14 16:36:19,842 | INFO  | Apollo : 1.7 (at: /home/zhaowei/work/apollo/apache-apollo-1.7) | 
+2015-01-14 16:36:19,844 | INFO  | OS is restricting the open file limit to: 3125 | 
+2015-01-14 16:36:19,850 | WARN  | Please increase the process file limit using 'ulimit -n 6500' or configure lower connection limits on the broker connectors. | 
+2015-01-14 16:36:20,086 | INFO  | Starting store: leveldb store at /home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/data | 
+2015-01-14 16:36:20,301 | INFO  | Accepting connections at: tcp://172.22.197.200:62000 | 
+2015-01-14 16:36:20,381 | INFO  | Opening the log file took: 121.55 ms | 
+2015-01-14 16:36:20,402 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-01-14 16:36:21,667 | INFO  | Administration interface available at: http://172.22.197.200:61685/ | 
+2015-01-14 16:36:21,667 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 16:36:44,055 | INFO  | java.io.EOFException: Peer disconnected | 14ae7961072
+2015-01-14 16:36:59,907 | INFO  | java.io.EOFException: Peer disconnected | 14ae7961074
+2015-01-14 16:42:34,766 | INFO  | Stopped connector at: tcp://172.22.197.200:62000 | 
+2015-01-14 16:42:34,776 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-01-14 16:44:17,530 | INFO  | OS     : Linux 3.2.0-74-generic (Ubuntu 12.04.5 LTS) | 
+2015-01-14 16:44:17,535 | INFO  | JVM    : OpenJDK 64-Bit Server VM 1.6.0_33 (Sun Microsystems Inc.) | 
+2015-01-14 16:44:17,537 | INFO  | Apollo : 1.7 (at: /home/zhaowei/work/apollo/apache-apollo-1.7) | 
+2015-01-14 16:44:17,539 | INFO  | OS is restricting the open file limit to: 3125 | 
+2015-01-14 16:44:17,545 | WARN  | Please increase the process file limit using 'ulimit -n 6500' or configure lower connection limits on the broker connectors. | 
+2015-01-14 16:44:17,781 | INFO  | Starting store: leveldb store at /home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/data | 
+2015-01-14 16:44:17,956 | INFO  | Accepting connections at: tcp://172.22.197.200:62000 | 
+2015-01-14 16:44:18,205 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-01-14 16:44:18,253 | INFO  | Opening the log file took: 274.39 ms | 
+2015-01-14 16:44:18,785 | INFO  | virtual host startup is waiting on store startup | 
+2015-01-14 16:44:18,902 | INFO  | virtual host startup is no longer waiting.  It waited a total of 1 seconds. | 
+2015-01-14 16:44:19,987 | INFO  | Administration interface available at: http://172.22.197.200:61685/ | 
+2015-01-14 16:44:19,988 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 16:45:00,562 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:45:00,623 | INFO  | Stopped connector at: tcp://172.22.197.200:62000 | 
+2015-01-14 16:45:00,623 | INFO  | Accepting connections at: tcp://0.0.0.0:61883 | 
+2015-01-14 16:45:09,303 | INFO  | Stopped connector at: tcp://0.0.0.0:61883 | 
+2015-01-14 16:45:09,312 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-01-14 16:45:19,296 | INFO  | OS     : Linux 3.2.0-74-generic (Ubuntu 12.04.5 LTS) | 
+2015-01-14 16:45:19,297 | INFO  | JVM    : OpenJDK 64-Bit Server VM 1.6.0_33 (Sun Microsystems Inc.) | 
+2015-01-14 16:45:19,298 | INFO  | Apollo : 1.7 (at: /home/zhaowei/work/apollo/apache-apollo-1.7) | 
+2015-01-14 16:45:19,298 | INFO  | OS is restricting the open file limit to: 3125 | 
+2015-01-14 16:45:19,300 | WARN  | Please increase the process file limit using 'ulimit -n 4500' or configure lower connection limits on the broker connectors. | 
+2015-01-14 16:45:19,531 | INFO  | Starting store: leveldb store at /home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/data | 
+2015-01-14 16:45:19,725 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2015-01-14 16:45:19,833 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-01-14 16:45:19,854 | INFO  | Opening the log file took: 146.40 ms | 
+2015-01-14 16:45:21,106 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 16:46:45,391 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:46:45,859 | INFO  | Administration interface available at: http://0.0.0.0:61681/ | 
+2015-01-14 16:46:45,860 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 16:47:41,453 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:47:41,829 | INFO  | Administration interface available at: http://172.22.197.200:61681/ | 
+2015-01-14 16:47:41,829 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 16:48:51,525 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:48:51,561 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2015-01-14 16:48:51,562 | INFO  | Accepting connections at: tcp://0.0.0.0:61883 | 
+2015-01-14 16:50:12,541 | INFO  | Stopped connector at: tcp://0.0.0.0:61883 | 
+2015-01-14 16:50:12,551 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-01-14 16:50:16,196 | INFO  | OS     : Linux 3.2.0-74-generic (Ubuntu 12.04.5 LTS) | 
+2015-01-14 16:50:16,197 | INFO  | JVM    : OpenJDK 64-Bit Server VM 1.6.0_33 (Sun Microsystems Inc.) | 
+2015-01-14 16:50:16,198 | INFO  | Apollo : 1.7 (at: /home/zhaowei/work/apollo/apache-apollo-1.7) | 
+2015-01-14 16:50:16,198 | INFO  | OS is restricting the open file limit to: 3125 | 
+2015-01-14 16:50:16,201 | WARN  | Please increase the process file limit using 'ulimit -n 4500' or configure lower connection limits on the broker connectors. | 
+2015-01-14 16:50:16,432 | INFO  | Starting store: leveldb store at /home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/data | 
+2015-01-14 16:50:16,610 | INFO  | Accepting connections at: tcp://0.0.0.0:61883 | 
+2015-01-14 16:50:16,861 | INFO  | Opening the log file took: 231.90 ms | 
+2015-01-14 16:50:16,883 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-01-14 16:50:17,448 | INFO  | virtual host startup is waiting on store startup | 
+2015-01-14 16:50:17,632 | INFO  | virtual host startup is no longer waiting.  It waited a total of 1 seconds. | 
+2015-01-14 16:50:18,732 | INFO  | Administration interface available at: http://172.22.197.200:61681/ | 
+2015-01-14 16:50:18,733 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 16:50:47,207 | INFO  | java.io.EOFException: Peer disconnected | 14ae7a2d397
+2015-01-14 16:52:21,578 | INFO  | Stopped connector at: tcp://0.0.0.0:61883 | 
+2015-01-14 16:52:21,587 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-01-14 16:52:25,869 | INFO  | OS     : Linux 3.2.0-74-generic (Ubuntu 12.04.5 LTS) | 
+2015-01-14 16:52:25,870 | INFO  | JVM    : OpenJDK 64-Bit Server VM 1.6.0_33 (Sun Microsystems Inc.) | 
+2015-01-14 16:52:25,871 | INFO  | Apollo : 1.7 (at: /home/zhaowei/work/apollo/apache-apollo-1.7) | 
+2015-01-14 16:52:25,871 | INFO  | OS is restricting the open file limit to: 3125 | 
+2015-01-14 16:52:25,873 | WARN  | Please increase the process file limit using 'ulimit -n 4500' or configure lower connection limits on the broker connectors. | 
+2015-01-14 16:52:26,111 | INFO  | Starting store: leveldb store at /home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/data | 
+2015-01-14 16:52:26,333 | INFO  | Accepting connections at: tcp://0.0.0.0:61883 | 
+2015-01-14 16:52:26,403 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-01-14 16:52:26,443 | INFO  | Opening the log file took: 167.83 ms | 
+2015-01-14 16:52:27,115 | INFO  | virtual host startup is waiting on store startup | 
+2015-01-14 16:52:27,176 | INFO  | virtual host startup is no longer waiting.  It waited a total of 1 seconds. | 
+2015-01-14 16:52:28,188 | INFO  | Administration interface available at: http://172.22.197.200:61681/ | 
+2015-01-14 16:52:28,189 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 16:52:45,175 | INFO  | java.io.EOFException: Peer disconnected | 14ae7a4ce45
+2015-01-14 16:54:18,967 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 16:54:23,582 | INFO  | java.io.EOFException: Peer disconnected | 14ae7a4ce47
+2015-01-14 16:54:31,823 | INFO  | java.io.EOFException: Peer disconnected | 14ae7a4ce49
+2015-01-14 16:58:53,971 | INFO  | java.io.EOFException: Peer disconnected | 14ae7a4ce4b
+2015-01-14 17:01:40,326 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/etc/apollo.xml'. | 
+2015-01-14 17:01:40,380 | INFO  | java.io.EOFException: Peer disconnected | 14ae7a4ce4d
+2015-01-14 17:01:40,380 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-01-14 17:01:40,382 | INFO  | Accepting connections at: ws://0.0.0.0:61884/ | 
+2015-01-14 17:04:19,729 | INFO  | java.io.EOFException: Peer disconnected | 14ae7a4ce4f
+2015-01-14 17:11:18,079 | INFO  | Stopped connector at: tcp://0.0.0.0:61883 | 
+2015-01-14 17:11:18,090 | INFO  | Stopped connector at: ws://0.0.0.0:61884 | 
+2015-01-14 17:12:20,800 | INFO  | OS     : Linux 3.2.0-74-generic (Ubuntu 12.04.5 LTS) | 
+2015-01-14 17:12:20,803 | INFO  | JVM    : OpenJDK 64-Bit Server VM 1.6.0_33 (Sun Microsystems Inc.) | 
+2015-01-14 17:12:20,803 | INFO  | Apollo : 1.7 (at: /home/zhaowei/work/apollo/apache-apollo-1.7) | 
+2015-01-14 17:12:20,804 | INFO  | OS is restricting the open file limit to: 3125 | 
+2015-01-14 17:12:20,806 | WARN  | Please increase the process file limit using 'ulimit -n 4500' or configure lower connection limits on the broker connectors. | 
+2015-01-14 17:12:21,034 | INFO  | Starting store: leveldb store at /home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/data | 
+2015-01-14 17:12:21,208 | INFO  | Accepting connections at: tcp://0.0.0.0:61883 | 
+2015-01-14 17:12:21,319 | INFO  | Accepting connections at: ws://0.0.0.0:61884/ | 
+2015-01-14 17:12:21,336 | INFO  | Opening the log file took: 104.73 ms | 
+2015-01-14 17:12:22,546 | INFO  | Administration interface available at: http://172.22.197.200:61681/ | 
+2015-01-14 17:12:22,547 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 17:39:07,512 | INFO  | java.io.EOFException: Peer disconnected | 14ae7b709eb
+2015-01-14 17:39:27,551 | INFO  | java.io.EOFException: Peer disconnected | 14ae7b709ed
+2015-01-14 20:36:14,329 | INFO  | Stopped connector at: tcp://0.0.0.0:61883 | 
+2015-01-14 20:36:14,337 | INFO  | Stopped connector at: ws://0.0.0.0:61884 | 
+2015-01-15 09:32:36,597 | INFO  | OS     : Linux 3.2.0-74-generic (Ubuntu 12.04.5 LTS) | 
+2015-01-15 09:32:36,602 | INFO  | JVM    : OpenJDK 64-Bit Server VM 1.6.0_33 (Sun Microsystems Inc.) | 
+2015-01-15 09:32:36,603 | INFO  | Apollo : 1.7 (at: /home/zhaowei/work/apollo/apache-apollo-1.7) | 
+2015-01-15 09:32:36,606 | INFO  | OS is restricting the open file limit to: 3125 | 
+2015-01-15 09:32:36,611 | WARN  | Please increase the process file limit using 'ulimit -n 4500' or configure lower connection limits on the broker connectors. | 
+2015-01-15 09:32:37,114 | INFO  | Starting store: leveldb store at /home/zhaowei/work/apollo/apache-apollo-1.7/zhaowei/data | 
+2015-01-15 09:32:38,094 | INFO  | Accepting connections at: tcp://0.0.0.0:61883 | 
+2015-01-15 09:32:38,175 | INFO  | virtual host startup is waiting on store startup | 
+2015-01-15 09:32:38,248 | INFO  | Accepting connections at: ws://0.0.0.0:61884/ | 
+2015-01-15 09:32:38,326 | INFO  | Opening the log file took: 246.63 ms | 
+2015-01-15 09:32:39,817 | INFO  | virtual host startup is no longer waiting.  It waited a total of 2 seconds. | 
+2015-01-15 09:32:40,900 | INFO  | Administration interface available at: http://172.22.197.200:61681/ | 
+2015-01-15 09:32:40,900 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-15 09:54:34,602 | INFO  | java.io.EOFException: Peer disconnected | 14aeb387c4d
+2015-01-15 12:50:32,433 | INFO  | Stopped connector at: tcp://0.0.0.0:61883 | 
+2015-01-15 12:50:32,442 | INFO  | Stopped connector at: ws://0.0.0.0:61884 | 

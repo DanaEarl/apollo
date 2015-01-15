@@ -1,0 +1,71 @@
+2015-01-14 15:28:10,630 | INFO  | OS     : Linux 3.2.0-74-generic (Ubuntu 12.04.5 LTS) | 
+2015-01-14 15:28:10,631 | INFO  | JVM    : OpenJDK 64-Bit Server VM 1.6.0_33 (Sun Microsystems Inc.) | 
+2015-01-14 15:28:10,632 | INFO  | Apollo : 1.7 (at: /home/zhaowei/work/apollo/apache-apollo-1.7) | 
+2015-01-14 15:28:10,632 | INFO  | OS is restricting the open file limit to: 3125 | 
+2015-01-14 15:28:10,634 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2015-01-14 15:28:10,893 | INFO  | Starting store: leveldb store at /home/zhaowei/work/apollo/apache-apollo-1.7/bin/mybroker/data | 
+2015-01-14 15:28:11,225 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2015-01-14 15:28:11,226 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2015-01-14 15:28:11,280 | INFO  | Opening the log file took: 77.09 ms | 
+2015-01-14 15:28:11,426 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-01-14 15:28:11,689 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2015-01-14 15:28:12,833 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2015-01-14 15:28:12,833 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-01-14 15:31:07,917 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/bin/mybroker/etc/apollo.xml'. | 
+2015-01-14 15:31:08,616 | WARN  | FAILED SelectChannelConnector@0.0.0.0:80: java.net.SocketException: Permission denied | 
+java.net.SocketException: Permission denied
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:174)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:139)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:77)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:283)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.apache.activemq.apollo.broker.jetty.JettyWebServer$$anonfun$_start$1.apply$mcV$sp(JettyWebServer.scala:270)
+	at org.fusesource.hawtdispatch.package$$anon$4.run(hawtdispatch.scala:357)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:701)
+2015-01-14 15:31:08,617 | WARN  | FAILED org.eclipse.jetty.server.Server@573e48d4: java.net.SocketException: Permission denied | 
+java.net.SocketException: Permission denied
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:174)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:139)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:77)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:182)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:311)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:260)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:283)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.apache.activemq.apollo.broker.jetty.JettyWebServer$$anonfun$_start$1.apply$mcV$sp(JettyWebServer.scala:270)
+	at org.fusesource.hawtdispatch.package$$anon$4.run(hawtdispatch.scala:357)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:701)
+2015-01-14 15:31:08,620 | WARN  | java.lang.Error: java.net.SocketException: Permission denied | 14ae757aa42
+2015-01-14 15:31:12,987 | INFO  | broker reconfiguration is waiting on update: jetty webserver | 
+2015-01-14 15:33:05,807 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:33:05,807 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:33:36,875 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:33:46,154 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:33:46,155 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:33:49,517 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:33:49,579 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:33:54,044 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:33:54,129 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:36:36,245 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/bin/mybroker/etc/apollo.xml'. | 
+2015-01-14 15:36:41,296 | INFO  | broker reconfiguration is waiting on update: jetty webserver | 
+2015-01-14 15:37:45,041 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:37:45,124 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-01-14 15:38:44,355 | INFO  | Reloading configuration file '/home/zhaowei/work/apollo/apache-apollo-1.7/bin/mybroker/etc/apollo.xml'. | 
+2015-01-14 15:38:49,413 | INFO  | broker reconfiguration is waiting on update: jetty webserver | 
+2015-01-14 15:40:12,426 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2015-01-14 15:40:12,426 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2015-01-14 15:40:12,434 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-01-14 15:40:12,435 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2015-01-14 15:40:13,414 | INFO  | stopping broker is waiting on stop broker: default | 
+2015-01-14 15:40:17,421 | INFO  | broker shutdown is waiting on stop jetty webserver | 
